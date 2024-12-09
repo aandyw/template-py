@@ -5,7 +5,7 @@ source "$SCRIPT_DIR/log.sh"
 # Create a virtual environment if it doesn't exist
 if [ ! -d ".venv" ]; then
     log "Creating virtual environment..."
-    python3 -m venv .venv
+    uv venv .venv
 fi
 
 source .venv/bin/activate
